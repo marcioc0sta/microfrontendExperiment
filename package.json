@@ -2,11 +2,18 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "concurrently": "^5.1.0",
+    "wsrun": "^5.2.0"
   },
   "workspaces": {
     "packages": [
-      "packages/**"
+      "packages/*"
     ]
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "serve": "wsrun --parallel serve",
+    "start": "concurrently \"wsrun --parallel start\" \"wsrun --parallel serve\""
   }
 }
