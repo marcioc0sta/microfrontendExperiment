@@ -49,13 +49,12 @@ module.exports = {
       name: "home",
       filename: "remoteEntry.js",
       remotes: {
-        nav: "header@http://localhost:3002/remoteEntry.js",
+        headerApp: "header@http://localhost:3002/remoteEntry.js",
       },
       exposes: {},
       shared: {
         ...deps,
         react: {
-          eager: true,
           singleton: true,
           requiredVersion: deps.react,
         },

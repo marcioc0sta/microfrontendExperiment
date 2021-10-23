@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://header/./src/app.js"],"names":["App"],"mappings":";;;;;;;;;;;;;;;;;;;AAAA;;AAEA,MAAMA,GAAG,GAAG,MAAM;AAChB,sBAAQ,qFAAR;AACD,CAFD;;AAIA,iEAAeA,GAAf,E","file":"src_app_js.js","sourcesContent":["import React from \"react\";\n\nconst App = () => {\n  return  <div>Header app</div>\n}\n\nexport default App"],"sourceRoot":""}

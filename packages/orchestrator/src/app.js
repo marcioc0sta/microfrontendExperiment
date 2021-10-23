@@ -1,7 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
+
+import Header from 'headerApp/Header';
 
 const App = () => {
-  return  <div>Orchestrator app demonstration</div>
+  const [headerTitle, setHeaderTitle] = useState('title')
+  const handleHeaderTitle = e => {
+    setHeaderTitle(e.target.value)
+  }
+  return  (
+    <div>
+      <Header headerTitle={headerTitle} />
+      Orchestrator app demonstration
+      <br/>
+      <br/>
+      <input onChange={handleHeaderTitle} type="text"/>
+    </div>
+  )
 }
 
 export default App
